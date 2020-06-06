@@ -1,9 +1,11 @@
 import React from 'react'
 
-function contact(params) {
+function Contact(params) {
     return (
-        <div className="hello from contact"></div>
+        <div className="hello from Contact">
+            <h1>hello from Contact</h1>
+        </div>
     )
 }
 
-export default contact
+export default Contact
