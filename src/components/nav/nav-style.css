@@ -1,0 +1,45 @@
+.master-container {
+    display: flex;
+    background-color: #2C343E;
+    height: 100px;
+    font-family: Raleway, Helvetica, sans-serif;
+  
+}
+
+.logo-container {
+    margin-right: auto;
+    padding-left: 20px;
+    color: white
+}
+
+
+nav.nav-bar {
+    padding-right: 40px;
+    font-weight: 100;
+    font-size: 30px;
+}
+
+
+.links {
+    display: flex;
+    list-style: none;
+    flex-direction: row-reverse
+}
+
+a:link {
+    text-decoration: none;
+  padding-left: 20px;
+
+}
+
+.links li {
+
+    color: #F0EBC5;
+}
+
+
+.links li a:hover {
+    color: red;
+
+}
+

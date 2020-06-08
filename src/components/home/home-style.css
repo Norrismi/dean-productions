@@ -1,0 +1,43 @@
+/* 
+#2C343E dark blue
+
+#94A2B3 blue background
+
+B7C1CC blue background 2
+
+#F0EBC5 yellow
+
+#FB9F89 salmon
+
+#77A69B Mint
+
+F7FFF7 white */
+
+/* .main-container{
+    display: block;
+    max-width:230px;
+    max-height:95px;
+    width: auto;
+    height: auto;
+} */
+*{
+
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+}
+
+.body {
+    background-color: #E7EAEE;
+    padding: 0 80px 0 80px;
+    width: 800px;
+
+}
+.first-paragraph{
+    padding-top: 50px;
+}

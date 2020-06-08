@@ -1,5 +1,4 @@
 import React from "react";
-import Nav from "./components/nav/nav";
 import Contact from "./components/contact/Contact";
 import Home from "./components/home/Home";
 import Testimonials from "./components/testimonials/Testimonials";
@@ -12,8 +11,6 @@ function App() {
       {/* <Link to="/">Home</Link>
       <Link to="/about">Contact</Link>
       <Link to="/testimonials">Testimonials</Link> */}
-
-      <Nav />
 
       <Switch>
         <Route path="/contact" component={Contact} />
