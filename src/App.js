@@ -2,6 +2,7 @@ import React from "react";
 import Contact from "./components/contact/Contact";
 import Home from "./components/home/Home";
 import Testimonials from "./components/testimonials/Testimonials";
+import contactComplete from './components/contact-complete/contact-complete'
 
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
@@ -14,6 +15,7 @@ function App() {
 
       <Switch>
         <Route path="/contact" component={Contact} />
+        <Route path="/contactComplete" component={contactComplete} />
         <Route path="/testimonials" component={Testimonials} />
         <Route path="/" exact component={Home} />
       </Switch>

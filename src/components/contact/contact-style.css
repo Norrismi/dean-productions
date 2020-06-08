@@ -1,0 +1,29 @@
+* {
+    box-sizing: border-box;
+    
+}
+
+.container{
+    background-color: #F3F5F7;
+
+}
+
+.header1{
+    padding: 0 80px 0 80px;
+    width: 800px;
+}
+
+.header2{
+    padding: 0 80px 0 80px;
+    width: 800px;
+}
+
+.body {
+    padding: 0 80px 0 80px;
+    width: 800px;
+
+}
+
+.contact-forms{
+    padding: 80px 0 0 80px;
+}
