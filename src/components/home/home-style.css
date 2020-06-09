@@ -20,16 +20,16 @@ F7FFF7 white */
     width: auto;
     height: auto;
 } */
-*{
-
+* {}
+.top-half{
+    background-color: #B7C1CC;
 }
-
 img {
     display: block;
-    max-width: 100%;
-    max-height: 100%;
-    width: auto;
-    height: auto;
+    max-width: 73%;
+    margin-left: auto;
+    margin-right: auto;
+
 }
 
 .body {
@@ -38,6 +38,7 @@ img {
     width: 800px;
 
 }
-.first-paragraph{
+
+.first-paragraph {
     padding-top: 50px;
 }

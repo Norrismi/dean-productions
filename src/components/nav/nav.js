@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 import "./nav-style.css";
 
 function Nav() {
@@ -7,19 +7,34 @@ function Nav() {
     <div className="master-container">
       <div className="logo-container">
         <h3 className="logo">Logo</h3>
-        </div >
+      </div>
 
       <nav className="nav-bar">
         <ul className="links">
-          <Link to="/contact">
+          <NavLink
+            to="/contact"
+            activeStyle={{
+              fontWeight: "bold",
+            }}
+          >
             <li>Contact</li>
-          </Link>
-          <Link to="/testimonials">
+          </NavLink>
+          <NavLink
+            to="/testimonials"
+            activeStyle={{
+              fontWeight: "bold",
+            }}
+          >
             <li>Testimonials</li>
-          </Link>
-          <Link to="/">
+          </NavLink>
+          <NavLink
+            exact to="/"
+            activeStyle={{
+              fontWeight: "bold",
+            }}
+          >
             <li>Home</li>
-          </Link>
+          </NavLink>
         </ul>
       </nav>
     </div>

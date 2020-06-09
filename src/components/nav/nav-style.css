@@ -38,8 +38,14 @@ a:link {
 }
 
 
-.links li a:hover {
-    color: red;
+
+.links li:hover {
+    color: #FB9F89;
 
 }
+
+
+
+
+
 

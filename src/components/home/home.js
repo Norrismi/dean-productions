@@ -6,7 +6,10 @@ import Nav from "../nav/nav";
 function home(params) {
   return (
     <div className="main-container">
-      <img src={musicPic} alt="Logo" />
+      <div className="top-half">
+
+      <img src={musicPic} />
+      </div>
       <div className="nav-bar">
         <Nav />
       </div>
