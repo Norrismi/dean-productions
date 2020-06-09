@@ -2,7 +2,9 @@ import React from "react";
 import Contact from "./components/contact/Contact";
 import Home from "./components/home/Home";
 import Testimonials from "./components/testimonials/Testimonials";
-import contactComplete from './components/contact-complete/contact-complete'
+import contactComplete from "./components/contact-complete/contact-complete";
+import MessageShow from "./components/messageShow/messageShow";
+import MessageFetch from "./components/messageFetch";
 
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
@@ -14,10 +16,13 @@ function App() {
       <Link to="/testimonials">Testimonials</Link> */}
 
       <Switch>
+        <Route path="/messageFetch" component={MessageFetch} />
+        <Route path="/messageShow" component={MessageShow} />
         <Route path="/contact" component={Contact} />
         <Route path="/contactComplete" component={contactComplete} />
         <Route path="/testimonials" component={Testimonials} />
         <Route path="/" exact component={Home} />
+       
       </Switch>
     </Router>
   );

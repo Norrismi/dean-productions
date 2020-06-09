@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Nav from "../nav/nav";
 import "./contact-style.css";
-import results from "../results";
+import api from "../api";
 
 //let emailRegex = RegExp(/[^@]+@[^.]+\..+/);
 
@@ -24,8 +24,13 @@ class Contact extends Component {
 
     const data = this.state;
 
+    // api.post("/submission.json", data).then(res=>{
+    //     console.log(res)
+    // })
+
     this.state.phone && this.state.message
-      ? results.post("/submission.json", data).then((res) => {
+      ? api.post("/submission.json", data).then((res) => {
+          console.log(res)
           this.props.history.push("/contactComplete");
         })
       : data.formErrors.form.push("Complete the form");
@@ -64,7 +69,7 @@ class Contact extends Component {
   render() {
     let { formErrors } = this.state;
     return (
-      <div className="container">
+      <div>
         <Nav />
         <h3 className="header1">Contact Us...</h3>
         <h3 className="header2">We want to hear from you!</h3>
@@ -76,7 +81,7 @@ class Contact extends Component {
           to meet your needs!
         </div>
         <div className="contact-forms">
-          <form id="contact-form" onSubmit={this.postDataHandler} method="POST">
+          <form id="contact-form" onSubmit={this.postDataHandler}>
             <div className="form-name">
               <input
                 type="text"
